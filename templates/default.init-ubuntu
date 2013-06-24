@@ -1,6 +1,6 @@
 # File Managed by Puppet
 # Uncomment the line below to start Puppet Dashboard.
-START=yes
+START=false
 
 # Location where puppet-dashboard is installed:
 DASHBOARD_HOME=/usr/share/puppet-dashboard
