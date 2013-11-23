@@ -23,6 +23,12 @@ class puppetdashboard::params {
   $db_user = 'dashboard'
   $db_password = 'dashboard'
 
+  $ca_server = 'puppet'
+  $inventory_server = 'puppet'
+  $enable_inventory_service = false
+  $filebucket_server = 'puppet'
+  $use_file_bucket_diffs = false
+
   ### Application related parameters
 
   $package = $::operatingsystem ? {
@@ -107,7 +113,7 @@ class puppetdashboard::params {
   $my_class = ''
   $source = ''
   $source_dir = ''
-  $source_dir_purge = 'false'
+  $source_dir_purge = false
   $template = 'puppetdashboard/settings.yml'
   $template_db = 'puppetdashboard/database.yml'
   $options = ''
